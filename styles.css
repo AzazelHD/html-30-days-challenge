@@ -11,7 +11,7 @@ body {
   padding: 0;
   color: var(--text-color);
   font-family: "Arial", sans-serif;
-  background: radial-gradient(circle, #000 0%, var(--bg-color) 100%);
+  background: radial-gradient(circle, #000 0%, var(--bg-color) 80%);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -24,8 +24,8 @@ header {
 }
 
 p {
-  margin: 0 auto;
   width: 80%;
+  margin: 0 auto;
 }
 
 a {
@@ -34,17 +34,29 @@ a {
   line-height: 1.5em;
 }
 
-footer {
+/* Explicar esto. Solo con footer {} se descentra */
+footer p {
   position: fixed;
+  left: 0px;
+  right: 0px;
   bottom: 10%;
-  /* duda con el margin */
   margin: 0 auto;
-  width: fit-content;
-  left: 0;
-  right: 0;
-  text-align: center;
+  max-width: fit-content;
   font-size: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+a.return {
+  color: var(--link-color);
+  text-decoration: none;
   padding: 0.5rem 1rem;
   border: 2px solid var(--link-color);
   border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+a.return:hover {
+  background-color: var(--link-color);
+  color: var(--bg-color);
 }

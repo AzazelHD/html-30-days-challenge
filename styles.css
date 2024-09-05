@@ -1,0 +1,50 @@
+:root {
+  color-scheme: dark;
+  --bg-color: #1e1e1e;
+  --text-color: #f5f5f5;
+  --link-color: #00aaff;
+  --link-hover-color: #00ccff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  font-family: "Arial", sans-serif;
+  background: radial-gradient(circle, #000 0%, var(--bg-color) 100%);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: top;
+  height: 100vh;
+}
+
+header {
+  margin-top: 1rem;
+}
+
+p {
+  margin: 0 auto;
+  width: 80%;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  line-height: 1.5em;
+}
+
+footer {
+  position: fixed;
+  bottom: 10%;
+  /* duda con el margin */
+  margin: 0 auto;
+  width: fit-content;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--link-color);
+  border-radius: 10px;
+}

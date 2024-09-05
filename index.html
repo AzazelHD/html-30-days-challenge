@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 30-days Challenge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>Bienvenido a <strong>HTML 30-day challenge</strong></h1>
+      <p>por <a href="https://lenguajehtml.com/challenge/" target="_blank">Manz.dev</a></p>
+      <p>Selecciona un reto para visualizarlo:</p>
+      <ul class="challenge-list">
+        <li><a href="/Challenge_1/">Reto 1</a></li>
+        <li><a href="/Challenge_2/">Reto 2</a></li>
+        <li><a href="/Challenge_3/">Reto 3</a></li>
+      </ul>
+    </section>
+  </body>
+  <style>
+    /* Apply dark mode color scheme */
+    :root {
+      color-scheme: dark;
+      --bg-color: #1e1e1e;
+      /* html logo color */
+      --title-color: #e34f26;
+      --text-color: #f5f5f5;
+      --link-color: #00aaff;
+      --link-hover-color: #00ccff;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Arial", sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      justify-content: center;
+      align-items: top;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    strong {
+      color: var(--title-color);
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .challenge-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .challenge-list li {
+      margin: 1rem 0;
+      letter-spacing: 0.25rem;
+    }
+
+    .challenge-list a {
+      color: var(--link-color);
+      text-decoration: none;
+      font-size: 1.5rem;
+      padding: 0.5rem 1rem;
+      border: 2px solid var(--link-color);
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+      display: inline-block;
+    }
+
+    .challenge-list a:hover {
+      background-color: var(--link-color);
+      color: var(--bg-color);
+    }
+  </style>
+</html>

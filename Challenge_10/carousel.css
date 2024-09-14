@@ -1,0 +1,85 @@
+:root {
+  color-scheme: dark;
+  --bg-color: #1e1e1e;
+  --text-color: #f5f5f5;
+  --link-color: #00aaff;
+  --link-hover-color: #00ccff;
+  --container-width: 960px;
+  --container-height: 540px;
+}
+
+.video-container {
+  width: var(--container-width);
+
+  text-align: center;
+  overflow: hidden;
+}
+
+.video-cell {
+  display: flex;
+
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+
+.video-cell > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: var(--container-width);
+  height: var(--container-height);
+  margin-right: 50px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation {
+  margin: 0;
+}
+
+.navigation > a {
+  max-width: var(--container-width);
+  margin: 2rem auto;
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1rem;
+  color: var(--text-color);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 2px solid var(--link-color);
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation > a:active {
+  top: 5px;
+}
+
+.navigation > a:hover {
+  color: var(--bg-color);
+  background-color: var(--link-color);
+}
+
+.navigation > a.last-clicked {
+  background-color: var(--link-color);
+}

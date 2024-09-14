@@ -1,0 +1,32 @@
+.ticket-info {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+meter {
+  width: 200px;
+  height: 30px;
+  border-radius: 25px;
+  background: #ddd;
+}
+
+meter::-webkit-meter-bar {
+  background: #ddd;
+  border-radius: 25px;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: #4caf50;
+  border-radius: 25px;
+}
+
+meter::-webkit-meter-suboptimum-value {
+  background: #ffeb3b;
+  border-radius: 25px;
+}
+
+meter::-webkit-meter-even-less-good-value {
+  background: #f44336;
+  border-radius: 25px;
+}

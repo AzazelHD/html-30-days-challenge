@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="table.css" />
+    <title>HTML 30-day challenge</title>
+  </head>
+  <body>
+    <header class="b">
+      <p>
+        Crea una tabla con información. Incluye una cabecera y un pie de tabla. La última columna será de un color
+        diferente.
+      </p>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>A AND B</th>
+            <th>A OR B</th>
+            <th>A XOR B</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td>False</td>
+          </tr>
+          <tr>
+            <td>True</td>
+            <td>False</td>
+            <td>False</td>
+            <td>True</td>
+            <td>True</td>
+          </tr>
+          <tr>
+            <td>False</td>
+            <td>True</td>
+            <td>False</td>
+            <td>True</td>
+            <td>True</td>
+          </tr>
+          <tr>
+            <td>False</td>
+            <td>False</td>
+            <td>False</td>
+            <td>False</td>
+            <td>False</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Totales</td>
+            <td>1 True</td>
+            <td>3 True</td>
+            <td>2 True</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+    <footer>¿Se podría hacer que los "totales" se contasen automaticamente en vez de meterlos a mano?</footer>
+  </body>
+</html>

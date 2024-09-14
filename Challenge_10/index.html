@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="carousel.css" />
+
+    <title>HTML 30-day challenge</title>
+  </head>
+  <body>
+    <header class="b">
+      <p>
+        Busca 5 videos de youtube. Inserta uno en la página. Haz que se pueda cambiar entre ellos como una TV. Dale
+        estilo con CSS para que se vea más bonito.
+      </p>
+    </header>
+    <main>
+      <section class="video-container">
+        <nav class="navigation">
+          <a href="#slide-1" class="last-clicked" onclick="lastClicked(this)">1</a>
+          <a href="#slide-2" onclick="lastClicked(this)">2</a>
+          <a href="#slide-3" onclick="lastClicked(this)">3</a>
+          <a href="#slide-4" onclick="lastClicked(this)">4</a>
+          <a href="#slide-5" onclick="lastClicked(this)">5</a>
+        </nav>
+
+        <script>
+          let clicked = document.querySelector(".last-clicked");
+
+          function lastClicked(el) {
+            if (clicked) {
+              clicked.classList.remove("last-clicked");
+            }
+            el.classList.add("last-clicked");
+            clicked = el;
+          }
+        </script>
+
+        <div class="video-cell">
+          <div id="slide-1">
+            <iframe
+              class="video"
+              title="A little bottle of water (Murloc meme)"
+              src="https://www.youtube.com/embed/K9KYdSMfF64"
+              frameborder="0"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div id="slide-2">
+            <iframe
+              class="video"
+              title="Students Excuses For Not Doing Their Homework."
+              src="https://www.youtube.com/embed/l1uE_pBqnvE"
+              frameborder="0"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div id="slide-3">
+            <iframe
+              class="video"
+              title="Hello I'm calling from room 252 and I would like to order a sandwitch"
+              src="https://www.youtube.com/embed/TtWYBm7T4bI"
+              frameborder="0"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div id="slide-4">
+            <iframe
+              class="video"
+              title="Doblaje español VS Latino"
+              src="https://www.youtube.com/embed/psZW9GgiAyo"
+              frameborder="0"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div id="slide-5">
+            <iframe
+              class="video"
+              src="https://www.youtube.com/embed/luNd7mzxuc8"
+              title="This is why woman live longer than men"
+              frameborder="0"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

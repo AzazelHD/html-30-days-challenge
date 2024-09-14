@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="form.css" />
+    <title>HTML 30-day challenge</title>
+  </head>
+  <body>
+    <header class="a">
+      <p>Crea un formulario para dejar un comentario en una página: Usuario y comentario de texto.</p>
+    </header>
+    <main>
+      <div class="form">
+        <form onsubmit="alert('Formulario enviado'); reset(); return false">
+          <div class="input">
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="input">
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" name="comment" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+table {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  border-collapse: collapse;
+}
+
+thead,
+tfoot {
+  color: black;
+  background-color: #f4f4f4;
+}
+
+thead th,
+tfoot td {
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+tbody td {
+  padding: 10px 0;
+  border: 1px solid #ddd;
+}
+
+tbody td:last-child,
+thead th:last-child,
+tfoot td:last-child {
+  color: #333;
+  background-color: #ffebcc;
+}

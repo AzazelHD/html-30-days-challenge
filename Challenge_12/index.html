@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>HTML 30-day challenge</title>
+  </head>
+  <body>
+    <header class="c">
+      <p>
+        Crea un slider que permita seleccionar un número entre 1-50 y lo muestre en vivo al cambiar. Requiere algo de
+        Javascript.
+      </p>
+    </header>
+    <main>
+      <span id="number" text-align="center" style="font-size: 10rem"></span>
+      <input type="range" min="1" max="50" value="1" class="slider" id="myRange" />
+    </main>
+    <script>
+      const slider = document.getElementById("myRange");
+      const number = document.getElementById("number");
+
+      slider.addEventListener("input", function () {
+        number.textContent = this.value;
+      });
+
+      // Initialize the number with the slider's default value
+      number.textContent = slider.value;
+    </script>
+  </body>
+</html>

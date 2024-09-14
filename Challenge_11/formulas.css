@@ -1,0 +1,39 @@
+.formula {
+  font-family: "STIX Two Math", serif;
+  font-size: 8rem;
+  max-width: 1000px;
+}
+
+sup {
+  font-size: 0.5em;
+  margin: 5px;
+  vertical-align: super;
+  color: #ff6f61;
+}
+
+.fraction {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.fraction > span {
+  display: block;
+}
+
+.fraction .numerator {
+  border-bottom: 4px solid;
+  padding: 0 0.2em;
+}
+
+.formula a {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.formula a:hover {
+  color: var(--link-hover-color);
+  transform: scale(1.05);
+  transform-origin: center;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>HTML 30-day challenge</title>
+  </head>
+  <body>
+    <header class="b">
+      <p>Coloca una imagen en formato JPEG-XL. Si el navegador no la soporta, que use AVIF. Sino, que use JPG.</p>
+    </header>
+    <main>
+      <picture>
+        <source srcset="Pikachu.jxl" type="image/jxl" />
+        <source srcset="Pikachu.avif" type="image/avif" />
+        <img src="Pikachu.png" alt="PNG Pikachu" width="500" />
+      </picture>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>HTML 30-day challenge</title>
+  </head>
+  <body>
+    <header class="c">
+      <p>Crea un formulario de registro que valide si el username escrito es válido (sólo letras y números) o no.</p>
+    </header>
+    <main>
+      <form class="registration-form">
+        <label for="username">Usuario:</label>
+        <input type="text" name="username" pattern="[A-Za-z][A-Za-z0-9]{2,15}" title="El nombre de usuario sólo puede
+        contener caracteres alfanuméricos. Como mínimo 3."" required />
+        <button type="submit">Register</button>
+      </form>
+    </main>
+  </body>
+</html>

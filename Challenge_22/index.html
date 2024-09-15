@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>HTML 30-day challenge</title>
+  </head>
+  <body>
+    <header class="b">
+      <p>
+        En la lista anterior, permite al usuario introducir opciones personalizadas (no sólo las de la lista) y filtrar
+        las opciones existentes.
+      </p>
+    </header>
+    <main>
+      <form class="videogame-form">
+        <label for="videogame-input">Ingresa el nombre de un videojuego:</label>
+        <input list="videogames" id="videogame-input" name="videogame-input" placeholder="Videojuego" />
+        <datalist id="videogames">
+          <option value="Monster Huner World: Iceborn">Monster Huner World: Iceborn</option>
+          <option value="NieR: Automata">NieR: Automata</option>
+          <option value="Horizon Forbidden Quest">Horizon Forbidden Quest</option>
+
+          <option value="Unreal Tournament">Unreal Tournament</option>
+          <option value="Call of Duty: Modern Warfare 2">Call of Duty: Modern Warfare 2</option>
+          <option value="Doom Eternal">Doom Eternal</option>
+
+          <option value="Subnautica">Subnautica</option>
+          <option value="Terraria">Terraria</option>
+          <option value="Astroneer">Astroneer</option>
+        </datalist>
+      </form>
+    </main>
+  </body>
+</html>

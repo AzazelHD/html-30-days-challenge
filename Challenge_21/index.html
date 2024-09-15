@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>HTML 30-day challenge</title>
+  </head>
+  <body>
+    <header class="a">
+      <p>Crea una lista desplegable donde se pueda seleccionar entre 3 grupos de productos ficticios.</p>
+    </header>
+    <main>
+      <select name="videogames">
+        <option value="" disabled selected>--- Selecciona el videojuego ---</option>
+        <optgroup label="RPG">
+          <option value="MHW_Iceborn">Monster Huner World: Iceborn</option>
+          <option value="NieR">NieR: Automata</option>
+          <option value="HFQ">Horizon Forbidden Quest</option>
+        </optgroup>
+        <optgroup label="FPS">
+          <option value="UT">Unreal Tournament</option>
+          <option value="COD_MW2">Call of Duty: Modern Warfare 2</option>
+          <option value="Doom_Eternal">Doom Eternal</option>
+        </optgroup>
+        <optgroup label="Survival">
+          <option value="Subnautica">Subnautica</option>
+          <option value="Terraria">Terraria</option>
+          <option value="Astroneer">Astroneer</option>
+        </optgroup>
+      </select>
+    </main>
+    <footer>
+      <p>
+        ¿Cómo puedo hacer para dar estilos por defecto a la opcion deshabilitada del <em>select</em>?<br />
+        Le voy a dar un color para que se note el cambio, pero sé que queda feo. Y es lo que quiero evitar.<br />
+        Tampoco entiendo por qué las etiquetas de los grupos (RPG, FPS y Survival) están en cursiva ni <br />
+        por qué se "corta" la última letra.
+      </p>
+    </footer>
+  </body>
+</html>

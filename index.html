@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="styles.css" />
     <title>HTML 30-days Challenge</title>
 
-    <meta name="description" content="HTML 30-days Challenge, para principiantes, por Manz.dev" />
+    <meta name="description" content="HTML 30-days Challenge, 30 retos de HTML para principiantes, por Manz.dev" />
 
     <!-- OPEN GRAPH -->
     <meta property="og:title" content="HTML 30-days Challenge" />
-    <meta property="og:description" content="HTML 30-days Challenge" />
-    <meta property="og:image" content="OG_Image.png" />
+    <meta property="og:description" content="HTML 30-days Challenge. 30 retos de HTML para principiantes" />
+    <meta property="og:image" content="./OG_Image.png" />
     <meta property="og:image:alt" content="HTML 30-days Challenge" />
   </head>
   <body>
@@ -29,7 +29,7 @@
         const li = document.createElement("li");
         const a = document.createElement("a");
 
-        a.href = `/Challenge_${i}/`;
+        a.href = `./Challenge_${i}/`;
         a.textContent = `Reto ${i}`;
 
         li.appendChild(a);

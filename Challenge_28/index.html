@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>HTML 30-day challenge: Challenge 28</title>
+  </head>
+  <body>
+    <header class="b">
+      <p>Crea una ventana modal que bloquee la interación con otros botones. Requiere un poco de Javascript.</p>
+    </header>
+    <main>
+      <button id="open-modal" onclick="document.querySelector('#modal').showModal()">Open</button>
+      <dialog id="modal">
+        <p>👻 ¡Bú! 👻</p>
+        <button id="close-modal" onClick="this.parentElement.close()">Close</button>
+      </dialog>
+    </main>
+    <footer>
+      <p>TODO: Poner sonidito de susto al abrir la modal xD</p>
+    </footer>
+  </body>
+</html>

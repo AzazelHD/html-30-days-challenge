@@ -226,6 +226,10 @@ summary:hover {
   background-color: initial;
 } */
 
+iframe {
+  border: 0;
+}
+
 video {
   max-width: 80%;
   height: auto;
